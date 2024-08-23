@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.05.2
+%define		kdeappsver	24.08.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kmines
 Summary:	kmines
 Name:		ka6-%{kaname}
-Version:	24.05.2
+Version:	24.08.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	226bd92c3d8e0c39575005f357e9f7f9
+# Source0-md5:	93858916f8dee1d8713d2dc82be2f3f4
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
@@ -48,7 +48,8 @@ game is over.
 
 %description -l pl.UTF-8
 KMines jest klasyczną grą w Sapera. Celem gry jest odkrycie wszystkich
-kwadratów bez trafiania na miny. Gdy mina wybuchnie, gra jest skończona.
+kwadratów bez trafiania na miny. Gdy mina wybuchnie, gra jest
+skończona.
 
 %prep
 %setup -q -n %{kaname}-%{version}
@@ -84,3 +85,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/kmines
 %{_datadir}/metainfo/org.kde.kmines.appdata.xml
 %{_datadir}/qlogging-categories6/kmines.categories
+%{_datadir}/qlogging-categories6/kmines.renamecategories
