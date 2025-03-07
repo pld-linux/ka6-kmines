@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.12.2
+%define		kdeappsver	24.12.3
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kmines
 Summary:	kmines
 Name:		ka6-%{kaname}
-Version:	24.12.2
+Version:	24.12.3
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	fba9b57a8853e8c50456e2973ee42009
+# Source0-md5:	7826991eda854570543dcc5d07e0b7bc
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
